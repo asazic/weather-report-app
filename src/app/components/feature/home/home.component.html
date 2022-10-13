@@ -1,0 +1,2 @@
+<mat-spinner *ngIf="isLoading$ | async" class="spinner"></mat-spinner>
+<app-daily-weather *ngIf="dailyWeather$ | async as dailyWeather" [dailyWeather]="dailyWeather"></app-daily-weather>

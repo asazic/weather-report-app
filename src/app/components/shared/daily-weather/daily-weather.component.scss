@@ -1,0 +1,76 @@
+
+
+.weather-card {
+    background-color: #B3E5FC;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    .weather-title {
+        ::ng-deep .mat-card-header-text{
+            width: 100%;
+        }
+        .mat-card-title {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        background-color: #4FC3F7;
+        color: black;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .weather-content {
+        color: black;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & > img {
+            width: 90px;
+            height: 90px;
+        }
+
+        .main-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            &__temp {
+                font-size: 30px;
+                margin: 2px;
+                font-weight: bold;
+            }
+
+            &__description {
+                font-size: 20px;
+                margin: 2px;
+            }
+
+            &__time {
+                font-size: 20px;
+                margin: 2px;
+            }
+
+            &__details {
+                font-size: 12px;
+                margin: 2px;
+            }
+        }
+
+        .weather-content-div {
+            padding: 10px;
+        }
+    }
+
+    .weather-footer {
+        // background-color: #00b8d9;
+        margin-top: auto;
+        // color: rgb(36, 32, 32);
+        padding: 10px;
+        font-size: 14px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}

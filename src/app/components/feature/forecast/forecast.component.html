@@ -1,0 +1,6 @@
+<mat-spinner *ngIf="isLoading$ | async" class="spinner"></mat-spinner>
+<div *ngIf="forecastList$ | async as forecastList">
+    <div *ngFor="let dailyWeather of forecastList" class="forecast-list">
+        <app-daily-weather [dailyWeather]="dailyWeather"></app-daily-weather>
+    </div>
+</div>
