@@ -1,7 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
-import { map, Observable, tap } from "rxjs";
-import { DailyWeatherComponent } from "src/app/components/shared/daily-weather/daily-weather.component";
+import { map, Observable } from "rxjs";
 import { environment } from 'src/environments/environment';
 import { DailyWeather, ForecastResponse, WeatherResponse } from "../model/weather-data";
 
